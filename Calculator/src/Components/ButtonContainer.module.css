@@ -1,0 +1,60 @@
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px; 
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.button {
+  width: 75px; 
+  height: 75px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #140202;
+  border: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff, #eaeaea); 
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.equalsButton {
+  background: linear-gradient(135deg, #fc575e, #f7b42c); 
+  box-shadow: 0px 8px 25px rgba(252, 87, 94, 0.6); 
+  color: #fff;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+}
+
+.dark .button {
+  background: radial-gradient(circle, #333333, #1a1a1a); 
+  color: #d4d4d4; 
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark .button:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6); 
+}
+
+.dark .equalsButton {
+  background: linear-gradient(135deg, #f7b42c, #fc575e); 
+  box-shadow: 0px 8px 25px rgba(252, 87, 94, 0.7);
+}
